@@ -2,6 +2,7 @@ package lap13;
 import java.util.Scanner;
 
 public class lap13_2 {
+    //hàm tìm phần tử xuất hiện nhiều lần trong mảng
     public static int devideAndConquer(int a[], int l, int r, int x) {
         if (l == r) {
             if (a[l] == x) {

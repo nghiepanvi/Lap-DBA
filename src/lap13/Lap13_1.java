@@ -1,7 +1,7 @@
 package lap13;
 
 import java.util.Scanner;
-
+// tìm chỉ mục các phần tử bằng nhau 2 dãy số
 public class Lap13_1 {
     //binary search: Tìm chỉ mục của các phần tử dãy số m trên dãy n
     static int binarySearch(int[] a, int x) {
