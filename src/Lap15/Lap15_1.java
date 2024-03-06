@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Lap15_1 {
     private static Random random = new Random();
-
+// thuật toán quizsort sắp xếp mang n phần tử
     private static int[] partition3(int[] a, int l, int r) {
         int x = a[l];
         int m1 = l;
@@ -58,7 +58,9 @@ public class Lap15_1 {
         a[l] = a[k];
         a[k] = t;
         //use partition3
+        //gọi hàm partiion2
         int m = partition2(a, l, r);
+        // gọi đệ quy
         randomizedQuickSort(a, l, m - 1);
         randomizedQuickSort(a, m + 1, r);
     }
@@ -70,6 +72,7 @@ public class Lap15_1 {
         for (int i = 0; i < n; i++) {
             a[i] = scanner.nextInt();
         }
+        // goi hàm ranzoom
         randomizedQuickSort(a, 0, n - 1);
         for (int i = 0; i < n; i++) {
             System.out.print(a[i] + " ");
