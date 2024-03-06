@@ -3,6 +3,7 @@ package Lap14;
 import java.util.*;
 
 public class Lap14_1 {
+    // cho số nguyên n, tính số phép tính để có thể có được n. x2,x3,+1
     private static List<Integer> optimal_sequence(int n) {
         List<Integer> sequence = new ArrayList<Integer>();
         while (n >= 1) {
