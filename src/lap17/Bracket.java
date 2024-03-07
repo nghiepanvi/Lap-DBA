@@ -4,7 +4,7 @@ public class Bracket {
         this.type = type;
         this.position = position;
     }
-
+// kiểm tra dấu ngoặc của biểu thức có hợp lệ không
     boolean Match(char c) {
         if (this.type == '[' && c == ']')
             return true;
