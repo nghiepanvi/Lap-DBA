@@ -25,7 +25,7 @@ public class Lap15_1 {
         int[] m = { m1, m2 };
         return m;
     }
-
+    //  đổi chỗ phần tử
     private static void swap(int[] a, int i, int j) {
         int temp = a[i];
         a[i] = a[j];
@@ -48,7 +48,7 @@ public class Lap15_1 {
         a[j] = t;
         return j;
     }
-
+// sắp xếp phần tử vị trí 1 đến r
     private static void randomizedQuickSort(int[] a, int l, int r) {
         if (l >= r) {
             return;
@@ -64,7 +64,7 @@ public class Lap15_1 {
         randomizedQuickSort(a, l, m - 1);
         randomizedQuickSort(a, m + 1, r);
     }
-
+ // hàm main nhập các giá trị
     public static void main(String[] args) {
         FastScanner scanner = new FastScanner(System.in);
         int n = scanner.nextInt();

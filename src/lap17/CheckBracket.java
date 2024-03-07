@@ -7,6 +7,7 @@ import java.util.Stack;
 
 public class CheckBracket {
     public static void main(String[] args) throws IOException, IOException {
+        //nhập dữ liệu từ bản phím, kiểm tra tính hợp lệ của dấu ngoặc
         InputStreamReader input_stream = new InputStreamReader(System.in);
         BufferedReader reader = new BufferedReader(input_stream);
         String text = reader.readLine();
